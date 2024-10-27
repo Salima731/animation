@@ -1,0 +1,30 @@
+.ani-sample{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(45, 148, 167);
+    animation: box-moving 5s ease-in-out;
+    position: absolute;
+}
+@keyframes box-moving {
+    0%{
+        left: 0%;
+        background-color: bisque;
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        left:90% ;
+        background-color: aquamarine;
+        transform: rotate(360deg) scale(0);
+    }
+    100%{
+        left: 0%;
+        background-color: bisque;
+        transform: rotate(0deg) scale(1);
+    }
+
+}
+
+.image-animation:hover img{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.25s;
+}
